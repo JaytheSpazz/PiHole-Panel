@@ -23,7 +23,6 @@ PiHole-Panel 1.8
 - Fixed update notification
 
 ## Upcoming features
-  - Ability to use multiple Pi-hole hosts
   - Live tracking of DNS requests
 
 ## Install/Update
