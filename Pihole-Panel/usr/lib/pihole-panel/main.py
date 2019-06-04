@@ -196,7 +196,7 @@ class GridWindow(Gtk.Window):
         # Create 2IP Address box
         two_ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
-        ip_address_label = Gtk.Label(label="Two Pi Address:      ")
+        ip_address_label = Gtk.Label(label="Pi Two Address:      ")
         two_ip_address_box.pack_start(ip_address_label, False, False, 6)
 
         two_ip_address_entry = Gtk.Entry()
@@ -214,7 +214,7 @@ class GridWindow(Gtk.Window):
 
         two_key_code_box = Gtk.HBox(homogeneous=False, spacing=6)
 
-        two_key_code_label = Gtk.Label(label="Two Pi Password:     ")
+        two_key_code_label = Gtk.Label(label="Pi Two Password:     ")
         two_key_code_box.pack_start(two_key_code_label, False, False, 6)
 
         two_key_code_entry = Gtk.Entry()
