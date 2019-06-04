@@ -187,6 +187,8 @@ class GridWindow(Gtk.Window):
         key_code_box.pack_start(key_code_label, False, False, 6)
 
         key_code_entry = Gtk.Entry()
+        key_code_entry.set_visibility(False)
+
         key_code_entry.set_text(configs["key_code"])
         key_code_box.pack_start(key_code_entry, False, False, 6)
 
@@ -218,6 +220,7 @@ class GridWindow(Gtk.Window):
         two_key_code_box.pack_start(two_key_code_label, False, False, 6)
 
         two_key_code_entry = Gtk.Entry()
+        two_key_code_entry.set_visibility(False)
 
         if "two_key_code" in configs:
             if configs["two_key_code"] is not None:
