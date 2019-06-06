@@ -7,6 +7,10 @@
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
 ## Changelog
+PiHole-Panel 2.2
+- Fix for default PiHole host that is not using standard url
+- Cosmetic fixes to GUI elements
+
 PiHole-Panel 2.1
 - Complete and stable host-switching
 
