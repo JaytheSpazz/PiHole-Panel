@@ -1,5 +1,5 @@
 Source: pihole-panel
-Section: devel
+Section: internet
 Priority: optional
 Maintainer: Dale Osm <webmaster@daleosm.com>
 XSBC-Original-Maintainer: Dale Osm <webmaster@daleosm.com>
