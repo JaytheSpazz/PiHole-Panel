@@ -26,7 +26,7 @@ rm ~/.config/pihole_panel_configs.xml
 
 ## Changelog
 PiHole-Panel 2.2
-- Fix for default PiHole host that is not using standard url.
+- Fix for default Pi-Hole host that is not using standard url.
 - Cosmetic fixes to GUI elements.
 
 PiHole-Panel 2.1
