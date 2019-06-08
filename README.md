@@ -43,6 +43,3 @@ PiHole-Panel 1.8
 - Now works with package manager
 - Fixed handling of when Pi-hole host is down.
 - Fixed update notification.
-
-## Upcoming features
-  - Live tracking of DNS requests.
