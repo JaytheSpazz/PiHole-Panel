@@ -6,6 +6,8 @@
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
+PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use it as a control panel to control your hosts.
+
 ## Changelog
 PiHole-Panel 2.2
 - Fix for default PiHole host that is not using standard url
