@@ -30,7 +30,7 @@ PiHole-Panel 2.2
 - Cosmetic fixes to GUI elements.
 
 PiHole-Panel 2.1
-- Complete and stable host-switching.
+- Complete and stable multi-host support.
 
 PiHole-Panel 2.0
 - Changes to API now require 3 second update interval.
