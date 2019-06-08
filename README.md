@@ -14,14 +14,14 @@ cd ~/Downloads
 sudo dpkg -i PiHole-Panel-latest.deb
 ```
 
-## Uninstall
-```
-sudo apt remove pihole-panel
-```
-
 ## Troubleshoot
 ```
 rm ~/.config/pihole_panel_configs.xml
+```
+
+## Uninstall
+```
+sudo apt remove pihole-panel
 ```
 
 ## Changelog
