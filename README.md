@@ -10,26 +10,26 @@ PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in
 
 ## Changelog
 PiHole-Panel 2.2
-- Fix for default PiHole host that is not using standard url
-- Cosmetic fixes to GUI elements
+- Fix for default PiHole host that is not using standard url.
+- Cosmetic fixes to GUI elements.
 
 PiHole-Panel 2.1
-- Complete and stable host-switching
+- Complete and stable host-switching.
 
 PiHole-Panel 2.0
-- Changes to API now require 3 second update interval
+- Changes to API now require 3 second update interval.
 
 PiHole-Panel 1.9
-- Now compatible with latest API
-- Temporary fix for Gravity Last Updated
+- Now compatible with latest API.
+- Temporary fix for Gravity Last Updated.
 
 PiHole-Panel 1.8
 - Now works with package manager
-- Fixed handling of when Pi-hole host is down
-- Fixed update notification
+- Fixed handling of when Pi-hole host is down.
+- Fixed update notification.
 
 ## Upcoming features
-  - Live tracking of DNS requests
+  - Live tracking of DNS requests.
 
 ## Install/Update
 ```
