@@ -18,7 +18,6 @@ gi.require_version("Gtk", "3.0")
 
 
 # Configuration variables of the app
-
 config_directory = str(Path.home()) + "/.config"
 config_filename = "pihole_panel_configs.xml"
 title = "PiHole Panel Assistant"
@@ -65,7 +64,6 @@ class AssistantApp:
         assistant.hide()
 
         # Load main screen
-
         from main import GridWindow
         GridWindow()
 
@@ -81,7 +79,6 @@ class AssistantApp:
         configs["key_code"] = key_code_entry.get_text()
 
         # Double to prevent rainbow attack
-
         configs["key_code"] = hashlib.sha256(
             configs["key_code"].encode("utf-8")).hexdigest()
         configs["key_code"] = hashlib.sha256(
@@ -189,7 +186,6 @@ class AssistantApp:
 
     def create_setup_page(self, configs):
         # Create IP Address box
-
         ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
         ip_address_label = Gtk.Label(label="Pi Address:  ")
@@ -203,7 +199,6 @@ class AssistantApp:
             ip_address_entry.set_text(configs["ip_address"])
 
         # Create Password explanation box
-
         key_code_explanation_box = Gtk.VBox(homogeneous=False, spacing=12)
         key_code_explanation_box.set_border_width(12)
         key_code_explanation_label = Gtk.Label(
@@ -212,7 +207,6 @@ class AssistantApp:
             key_code_explanation_label, False, False, 12)
 
         # Create Password box
-
         key_code_box = Gtk.HBox(homogeneous=False, spacing=12)
         key_code_label = Gtk.Label(label="Password:     ")
         key_code_box.pack_start(key_code_label, False, False, 12)
@@ -224,7 +218,6 @@ class AssistantApp:
             key_code_entry.set_text(configs["key_code"])
 
         # Add above boxes to single box
-
         page_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page_box.pack_start(key_code_explanation_box, False, False, 0)
         page_box.pack_start(ip_address_box, False, False, 0)
@@ -234,7 +227,6 @@ class AssistantApp:
         self.assistant.append_page(page_box)
 
         # Set other page properties
-
         self.assistant.set_page_title(page_box, "Setup")
         self.assistant.set_page_type(page_box, Gtk.AssistantPageType.INTRO)
 
