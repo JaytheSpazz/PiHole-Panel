@@ -36,7 +36,7 @@ class AssistantApp:
         page_num = self.check_configs_and_get_page_num(configs)
 
         self.create_setup_page(configs)
-        self.create_about_page()
+        self.create_complete_page()
 
         self.assistant.connect("cancel", self.on_close_cancel)
         self.assistant.connect("close", self.on_close_cancel)
@@ -243,7 +243,7 @@ class AssistantApp:
     def on_edit_setup_clicked(self, button):
         self.assistant.set_current_page(0)
 
-    def create_about_page(self):
+    def create_complete_page(self):
         label = Gtk.Label(label="Congratulations!")
 
         button = Gtk.Button.new_with_label("Edit Setup")
