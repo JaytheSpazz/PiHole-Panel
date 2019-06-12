@@ -4,7 +4,7 @@
 # PIPELINE TEST
 from pathlib import Path
 from urllib.request import urlopen
-from gi.repository import Gtk, GLib, Gio
+from gi.repository import Gtk, Gio
 from gi.repository import GLib as glib
 from gtk_assistant import AssistantApp
 
