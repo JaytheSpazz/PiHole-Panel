@@ -6,9 +6,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from gi.repository import Gtk
 
+import xml.etree.ElementTree as ET
 import urllib.request
 import urllib.error
-
 import os
 import gi
 import json
