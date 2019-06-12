@@ -1,4 +1,4 @@
-# PiHole-Panel 2.2
+# PiHole-Panel 2.3
 
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/main_window.png)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup.png)
@@ -25,6 +25,10 @@ sudo apt remove pihole-panel
 ```
 
 ## Changelog
+PiHole-Panel 2.3
+- Settings window is now a fixed size.
+- Code and performance improvements.
+
 PiHole-Panel 2.2
 - Fix for default Pi-hole host that is not using standard url.
 - Cosmetic fixes to GUI elements.
