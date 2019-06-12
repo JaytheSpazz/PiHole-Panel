@@ -1,5 +1,11 @@
+-- Dale Osm <webmaster@daleosm.com> Wed, 12 Jun 2019 13:51:21 +0000
+pihole-panel (2.3) cosmic; urgency=low
+
+  * Settings window is now a fixed size.
+  * Code and performance improvements.
+
 -- Dale Osm <webmaster@daleosm.com> Sun, 6 Jun 2019 13:36:55 +0000
-pihole-panel (2.1) cosmic; urgency=high
+pihole-panel (2.2) cosmic; urgency=high
 
   * Fix for default Pi-hole host that is not using standard url.
   
