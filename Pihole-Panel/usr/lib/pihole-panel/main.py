@@ -4,14 +4,13 @@
 # PIPELINE TEST
 from pathlib import Path
 from urllib.request import urlopen
-import xml.etree.ElementTree as ET
 from gi.repository import Gtk, GLib, Gio
 from gi.repository import GLib as glib
 from gtk_assistant import AssistantApp
 
 import urllib.request
 import urllib.error
-
+import xml.etree.ElementTree as ET
 import json
 import gi
 import sys
