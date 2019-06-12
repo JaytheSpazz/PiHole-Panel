@@ -589,7 +589,7 @@ def make_dictionary_keys_readable(dict):
 
     return new_dict
 
-if wc.is_config_file_exist(config_directory, config_filename) == True:
+if wc.is_config_file_exist(config_directory, config_filename):
 
     configs = wc.load_configs(config_directory, config_filename)
 
