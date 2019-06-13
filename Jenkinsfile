@@ -9,7 +9,9 @@ pipeline {
         }
         
         stage('Cleanup'){
-            cleanWs deleteDirs: true, patterns: [[pattern: '*', type: 'INCLUDE'], [pattern: '.deb', type: 'EXCLUDE']]
+            steps {
+                cleanWs deleteDirs: true, patterns: [[pattern: '*', type: 'INCLUDE'], [pattern: '.deb', type: 'EXCLUDE']]
+            }
         }
     }
 }
