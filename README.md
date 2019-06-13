@@ -1,10 +1,11 @@
-# PiHole-Panel 2.2
+# PiHole-Panel 2.3
 
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/main_window.png)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup.png)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup_done.png)
 
-PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use it as a control panel to control your hosts.
+PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use  
+it as a control panel to control your Pi-hole hosts independently.
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
@@ -25,6 +26,10 @@ sudo apt remove pihole-panel
 ```
 
 ## Changelog
+PiHole-Panel 2.3
+- Settings window is now a fixed size.
+- Code and performance improvements.
+
 PiHole-Panel 2.2
 - Fix for default Pi-hole host that is not using standard url.
 - Cosmetic fixes to GUI elements.
