@@ -26,15 +26,15 @@ wc = AssistantApp()
 
 # Configuration variables of the app
 update_interval_seconds = 3  # Time interval between updates
-version_number = "2.3"
-config_directory = str(Path.home()) + "/.config"
-config_filename = "pihole_panel_configs.xml"
+version_number = "2.3" # Change this on every release!
+config_directory = str(Path.home()) + "/.config" # Directory of config file
+config_filename = "pihole_panel_configs.xml" # Filename of config file
 
 
 class GridWindow(Gtk.Window):
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="PiHole Panel")
+        Gtk.Window.__init__(self, title="PiHole Panel") # This is being set twice and one should be removed in future release
         self.assistant = Gtk.Assistant()
         grid = Gtk.Grid(margin=4)
         grid.set_column_homogeneous(True)
@@ -60,6 +60,7 @@ class GridWindow(Gtk.Window):
         # This function is called periodically
         print("Timer running...")
 
+        # Get actively selected host ID
         index = hosts_combo.get_active()
         model = hosts_combo.get_model()
         item = model[index]
@@ -88,7 +89,7 @@ class GridWindow(Gtk.Window):
             return False
 
         else:
-            # Decide what host id has been selected
+            # Decide what hostname has been selected
             if item[0] == 1:
                 self.fetch_data_and_update_display(base_url, web_password)
             if item[0] == 2:
@@ -256,7 +257,7 @@ class GridWindow(Gtk.Window):
             if configs["two_ip_address"] != None:
                 name_store.append([2, configs["two_ip_address"]])
 
-        global hosts_combo
+        global hosts_combo # This is bad and should be removed at some point
 
         hosts_combo = Gtk.ComboBox.new_with_model_and_entry(name_store)
         hosts_combo.set_entry_text_column(1)
@@ -412,6 +413,7 @@ class GridWindow(Gtk.Window):
         return json_obj["status"]
 
     # This function creates a box that contains data in the "items_dict" arranged as a 2-column table
+    # This could be useful in other projects
     def create_table_box(self, left_heading, right_heading, items_dict):
         # First column box
         first_column_box = Gtk.Box(
