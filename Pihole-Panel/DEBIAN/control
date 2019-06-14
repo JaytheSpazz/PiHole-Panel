@@ -10,4 +10,4 @@ Package: pihole-panel
 Version: 2.3
 Architecture: all
 Depends: python3-gi
-Description: PiHole-Panel is a control panel and real-time statistics for the Pi-hole Adblocker.
+Description: Python/GTK3 based Pi-hole Dashboard for stats and more
