@@ -45,6 +45,6 @@ PiHole-Panel 1.9
 - Temporary fix for Gravity Last Updated.
 
 PiHole-Panel 1.8
-- Now works with package manager
-- Fixed handling of when Pi-hole host is down.
-- Fixed update notification.
+- Now works with package manager.
+- Fix for handling of when Pi-hole host is down.
+- Fix for update notification.
