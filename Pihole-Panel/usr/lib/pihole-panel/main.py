@@ -34,7 +34,7 @@ config_filename = "pihole_panel_configs.xml" # Filename of config file
 class GridWindow(Gtk.Window):
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="PiHole Panel") # This is being set twice and one should be removed in future release
+        Gtk.Window.__init__(self)
         self.assistant = Gtk.Assistant()
         grid = Gtk.Grid(margin=4)
         grid.set_column_homogeneous(True)
