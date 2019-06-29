@@ -1,11 +1,10 @@
 # PiHole-Panel 2.3
+PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use  
+it as a control panel to control your Pi-hole hosts independently.
 
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/main_window.png)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup.png)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup_done.png)
-
-PiHole-Panel connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use  
-it as a control panel to control your Pi-hole hosts independently.
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
