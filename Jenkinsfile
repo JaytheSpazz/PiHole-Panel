@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'ubuntu:latest' }
+    }
+    
     options {
         buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
     }
