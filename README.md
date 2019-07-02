@@ -11,9 +11,8 @@ Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup_done.png)
 
 ## Install/Update
-```
 Download PiHole-Panel-latest.deb from above.
-
+```
 cd ~/Downloads
 sudo dpkg -i PiHole-Panel-latest.deb
 ```
