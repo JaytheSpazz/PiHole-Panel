@@ -1,6 +1,8 @@
 # PiHole-Panel 2.3
 Connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use  
-it as a control panel to control your Pi-hole hosts independently. This program will run your Pi or desktop that is running Raspian, Ubuntu, Debian etc...
+it as a control panel to control your Pi-hole hosts independently. 
+
+This program will run your Pi or desktop that is running Raspian, Ubuntu, Debian etc...
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
@@ -10,6 +12,8 @@ Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
 ## Install/Update
 ```
+Download PiHole-Panel-latest.deb from above.
+
 cd ~/Downloads
 sudo dpkg -i PiHole-Panel-latest.deb
 ```
