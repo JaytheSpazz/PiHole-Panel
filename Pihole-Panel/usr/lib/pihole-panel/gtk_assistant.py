@@ -125,7 +125,7 @@ class AssistantApp:
 
         url = ip_address + "api.php?topItems&auth=" + key_code
         results = urllib.request.urlopen(url, timeout=15).read()
-        json_obj = json.loads(results)
+        json_obj = json.loads(results.decode('utf-8'))
 
         if "top_queries" not in json_obj:
             dialog = Gtk.MessageDialog(self.assistant, 0, Gtk.MessageType.ERROR,
