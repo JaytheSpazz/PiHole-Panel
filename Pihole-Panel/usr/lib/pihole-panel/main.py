@@ -355,7 +355,7 @@ class GridWindow(Gtk.Window):
 
         url = base_url + "api.php?summary"
         result = urlopen(url, timeout=15).read()
-        json_obj = json.loads(result)
+        json_obj = json.loads(result.decode())
 
         status = str(json_obj["status"])
         del json_obj["status"]  # We only want the statistics
@@ -383,7 +383,7 @@ class GridWindow(Gtk.Window):
     def get_top_items(self, base_url, web_password):
         url = base_url + "api.php?topItems&auth=" + web_password
         results = urlopen(url, timeout=15).read()
-        json_obj = json.loads(results)
+        json_obj = json.loads(results.decode())
 
         top_queries_dict = json_obj["top_queries"]
         top_ads_dict = json_obj["top_ads"]
@@ -403,13 +403,13 @@ class GridWindow(Gtk.Window):
     def send_enable_request(self):
         url = base_url + "api.php?enable&auth=" + web_password
         results = urlopen(url, timeout=15).read()
-        json_obj = json.loads(results)
+        json_obj = json.loads(results.decode())
         return json_obj["status"]
 
     def send_disable_request(self):
         url = base_url + "api.php?disable&auth=" + web_password
         results = urlopen(url, timeout=15).read()
-        json_obj = json.loads(results)
+        json_obj = json.loads(results.decode())
         return json_obj["status"]
 
     # This function creates a box that contains data in the "items_dict" arranged as a 2-column table
@@ -506,7 +506,7 @@ class GridWindow(Gtk.Window):
             dialog.run()
 
         results = urlopen(url, timeout=15).read()
-        json_obj = json.loads(results)
+        json_obj = json.loads(results.decode())
            
         if "top_queries" not in json_obj:
             dialog = Gtk.MessageDialog(self.assistant, 0, Gtk.MessageType.ERROR,
@@ -543,7 +543,7 @@ class GridWindow(Gtk.Window):
                 
 
             results = urlopen(url, timeout=15).read()
-            json_obj = json.loads(results)
+            json_obj = json.loads(results.decode())
             
             if "top_queries" not in json_obj:
                     dialog = Gtk.MessageDialog(self.assistant, 0, Gtk.MessageType.ERROR,
