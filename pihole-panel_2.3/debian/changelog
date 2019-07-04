@@ -1,35 +1,11 @@
--- Dale Osm <webmaster@daleosm.com> Wed, 12 Jun 2019 13:51:21 +0000
+pihole-panel (2.4) disco; urgency=low
+
+  * Changes to debian build folder
+
+ -- Dale Osm <dale.osmond@gmx.com>  Thu, 4 Jul 2019 17:44:56 +0500
 pihole-panel (2.3) cosmic; urgency=low
 
   * Settings window is now a fixed size.
   * Code and performance improvements.
 
--- Dale Osm <webmaster@daleosm.com> Sun, 6 Jun 2019 13:36:55 +0000
-pihole-panel (2.2) cosmic; urgency=high
-
-  * Fix for default Pi-hole host that is not using standard url.
-  
--- Dale Osm <webmaster@daleosm.com> Sun, 2 Jun 2019 19:19:55 +0000
-pihole-panel (2.1) cosmic; urgency=low
-
-  * Complete and stable multi-host support.
-  
--- Dale Osm <webmaster@daleosm.com> Sun, 12 May 2019 12:06:04 +0000
-pihole-panel (2.0) cosmic; urgency=high
-
-  * Changes to API now require 3 second update interval.
-  
--- Dale Osm <webmaster@daleosm.com> Mon, 24 Mar 2019 10:23:31 +0000
-pihole-panel (1.9) cosmic; urgency=low
-
-  * Now compatible with latest API.
-  * Temporary fix for Gravity Last Updated.
-
--- Dale Osm <webmaster@daleosm.com> Fri, 29 Mar 2019 12:27:49 +0000
-pihole-panel (1.8) cosmic; urgency=low
-
-  * Now works with package manager.
-  * Fix for handling of when Pi-hole host is down.
-  * Fix for update notification.
-
--- Dale Osm <webmaster@daleosm.com> Thu, 21 Oct 2018 11:12:00 +0000
+ -- Dale Osm <dale.osmond@gmx.com>  Wed, 12 Jun 2019 13:51:21 +0500
