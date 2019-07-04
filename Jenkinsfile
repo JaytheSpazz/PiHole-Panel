@@ -11,11 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd ${WORKSPACE}/Pihole-Panel'
-                sh 'apt-get update'
-                sh 'apt-get install python-stdeb fakeroot python-all'
-                sh '''        
-                python setup.py --command-packages=stdeb.command bdist_deb\\;
-                '''
+                sh 'dpkg --build Pihole-Panel/ PiHole-Panel-latest.deb'
             }
         }
         
