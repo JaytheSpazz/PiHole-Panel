@@ -12,11 +12,11 @@ Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
 ## Install/Update
 ```
-Download PiHole-Panel-latest.deb from above
+Download pihole-panel-latest.deb from above
 ```
 ```
 cd ~/Downloads
-sudo dpkg -i PiHole-Panel-latest.deb
+sudo dpkg -i pihole-panel-latest.deb
 ```
 
 ## Troubleshoot
