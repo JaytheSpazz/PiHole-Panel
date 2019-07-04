@@ -1,15 +1,15 @@
 Source: pihole-panel
-Section: internet
-Priority: optional
+Section: utils
+Priority: extra
 Maintainer: Dale Osm <dale.osmond@gmx.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.5
+Homepage: https://github.com/daleosm/PiHole-Panel
+#Vcs-Git: git://git.debian.org/collab-maint/dbcompile.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/dbcompile.git;a=summary
 
 Package: pihole-panel
-Version: 2.3
-Standards-Version: 3.9.5
-XSBC-Original-Maintainer: Dale Osm <webmaster@daleosm.com>
 Architecture: all
-Build-Depends: debhelper (>= 7)
-Homepage: https://github.com/daleosm/PiHole-Panel
 Depends: python3-gi
 Description: Python/GTK3 based Pi-hole Dashboard for stats and more
  Connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use it as a control panel to control your Pi-hole hosts independently.
