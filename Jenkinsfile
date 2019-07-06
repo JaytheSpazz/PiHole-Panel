@@ -10,8 +10,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'apt update'
+                sh 'apt install build-dep -y fdupes'
+
                 sh 'cd ${WORKSPACE}/Pihole-Panel'
-                sh 'dpkg --build Pihole-Panel/ PiHole-Panel-latest.deb'
+                sh 'debuild -S -sa'
+                sh 'dput ppa:daleosm/pihole-panel pihole-panel_2.3_source.changes'
             }
         }
         
