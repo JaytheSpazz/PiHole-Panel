@@ -21,7 +21,7 @@ cd ~/Downloads
 sudo dpkg -i pihole-panel-latest.deb
 ```
 
-Alternatively, Ubuntu and more experimental Raspbian users can use the Ubuntu PPA:
+**Alternatively,** Ubuntu and more experimental Raspbian users can use the Ubuntu PPA:
 ```
 sudo add-apt-repository ppa:daleosm/pihole-panel
 sudo apt-get update
