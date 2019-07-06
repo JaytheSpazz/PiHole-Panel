@@ -12,7 +12,9 @@ Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
 ## Install/Update
 ```
-Download pihole-panel-latest.deb from above
+1. You must use a password with your Pi-hole otherwise the API becomes read-only.
+2. Download pihole-panel-latest.deb from above.
+3. Open Terminal
 ```
 ```
 cd ~/Downloads
