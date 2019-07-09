@@ -1,0 +1,2 @@
+* Update version number in main.py
+* Update version number in control file
