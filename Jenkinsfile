@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd ${WORKSPACE}/pihole-panel'
-                sh 'debuild -S -sa'
+                sh 'debuild -us -uc'
                 /*
                     Sign and upload from workstation since instance is not online 24/7
                     and would require storing GPG key in an unsecure manner.
@@ -19,10 +19,11 @@ pipeline {
             }
         }
         
+        /*
         stage('Cleanup'){
             steps {
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', type: 'EXCLUDE']]
             }
-        }
+        } */
     }
 }
