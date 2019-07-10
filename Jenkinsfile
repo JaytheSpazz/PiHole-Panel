@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd ${WORKSPACE}/Pihole-Panel'
+                sh 'cd ${WORKSPACE}/pihole-panel'
                 sh 'debuild -S -sa'
                 /*
                     Sign and upload from workstation since instance is not online 24/7
