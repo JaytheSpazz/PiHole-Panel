@@ -27,7 +27,7 @@ pipeline {
         stage('Cleanup'){
             steps {
                 /*
-                    We need the output files since we are building on workstation.
+                    We need the output files since we are signing on workstation.
                 
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', type: 'EXCLUDE']]
                 */
