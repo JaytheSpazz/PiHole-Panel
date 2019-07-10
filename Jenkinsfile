@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd pihole-panel'
-                sh 'debuild -us -uc'
+                sh 'debuild -us -uc pihole-panel/'
                 /*
                     Sign and upload from workstation since instance is not online 24/7
                     and would require storing GPG key in an unsecure manner.
