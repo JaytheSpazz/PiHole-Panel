@@ -14,10 +14,10 @@ pipeline {
             }
         }
         
-       /* stage('Cleanup'){
+        stage('Cleanup'){
             steps {
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', '*.build', '*.buildinfo', '*.changes', '*.dsc', '*.tar.gz', type: 'EXCLUDE']]
             }
-        } */
+        }
     }
 }
