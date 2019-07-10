@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     options {
         buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
     }
@@ -8,21 +8,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'debuild -us -uc ${WORKSPACE}/pihole-panel/'
-                /*
-                    Sign and upload from workstation since instance is not online 24/7
-                    and would require storing GPG key in an unsecure manner.
-
-                sh 'dput ppa:daleosm/pihole-panel pihole-panel_2.3_source.changes'
-                */
+                sh 'cd ${WORKSPACE}/pihole-panel'
+                sh 'dpkg --build Pihole-Panel/ PiHole-Panel-latest.deb'
             }
         }
         
-        /*
         stage('Cleanup'){
             steps {
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', type: 'EXCLUDE']]
             }
-        } */
+        }
     }
 }
