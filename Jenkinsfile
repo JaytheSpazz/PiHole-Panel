@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'debuild -us -uc pihole-panel'
+                sh 'ls'
             }
         }
         
