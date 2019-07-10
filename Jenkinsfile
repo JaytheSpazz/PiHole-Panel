@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd ${WORKSPACE}/pihole-panel'
-                sh 'dpkg --build pihole-panel/ pihole-panel-latest.deb'
+                sh 'debuild -us -uc pihole-panel/'
             }
         }
         
