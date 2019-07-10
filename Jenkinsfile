@@ -8,15 +8,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh'cd pihole-panel'
-                sh 'ls'
+                dir("pihole-panel") {
+                    sh "debuild -us -uc"
+                }
             }
         }
         
-        stage('Cleanup'){
+       /* stage('Cleanup'){
             steps {
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', type: 'EXCLUDE']]
             }
-        }
+        } */
     }
 }
