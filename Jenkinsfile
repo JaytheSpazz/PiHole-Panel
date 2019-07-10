@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd ${WORKSPACE}/pihole-panel'
-                sh 'dpkg --build Pihole-Panel/ PiHole-Panel-latest.deb'
+                sh 'dpkg --build pihole-panel/ pihole-panel-latest.deb'
             }
         }
         
