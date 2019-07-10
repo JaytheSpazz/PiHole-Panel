@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'ubuntu:latest' }
-    }
-    
+
     options {
         buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
     }
@@ -20,14 +17,11 @@ pipeline {
                 */
             }
         }
-        /*
+        
         stage('Cleanup'){
             steps {
-                
-                    We need the output files since we are signing on workstation.
-                
                 cleanWs deleteDirs: true, patterns: [[pattern: '*.deb', type: 'EXCLUDE']]
             }
-        }  */
+        }
     }
 }
