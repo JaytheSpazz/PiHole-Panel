@@ -10,9 +10,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo apt update'
-                sh 'sudo apt install build-dep -y fdupes'
-
                 sh 'cd ${WORKSPACE}/Pihole-Panel'
                 sh 'debuild -S -sa'
                 /*
