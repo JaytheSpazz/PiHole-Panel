@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd ${WORKSPACE}/pihole-panel'
-                sh 'debuild -us -uc'
+                sh 'debuild -us -uc /var/jenkins_home/workspace/daleosm_PiHole-Panel_master/pihole-panel'
                 /*
                     Sign and upload from workstation since instance is not online 24/7
                     and would require storing GPG key in an unsecure manner.
