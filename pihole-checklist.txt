@@ -1,2 +1,3 @@
 * Update version number in main.py
 * Update version number in control file
+* Update VERSION file once release has been tested for a few days
