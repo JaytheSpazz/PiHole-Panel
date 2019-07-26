@@ -151,6 +151,7 @@ class GridWindow(Gtk.Window):
         self.popup = Gtk.Window()
         self.popup.set_resizable(False)
         self.popup.set_title("Settings")
+        self.popup.set_position(Gtk.WindowPosition.CENTER)
         page_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.popup.add(page_box)
         self.popup.set_size_request(100, 250)
