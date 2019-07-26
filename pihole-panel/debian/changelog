@@ -1,6 +1,11 @@
+pihole-panel (2.5) disco; urgency=low
+
+  * Settings window is now centered.
+
+ -- Dale Osm <dale.osmond@gmx.com>  Fri, 26 Jul 2019 22:28:03 +0500
 pihole-panel (2.4) disco; urgency=low
 
-  * Changes to debian build folder
+  * Changes to debian build folder.
 
  -- Dale Osm <dale.osmond@gmx.com>  Thu, 4 Jul 2019 17:44:56 +0500
 pihole-panel (2.3) cosmic; urgency=low

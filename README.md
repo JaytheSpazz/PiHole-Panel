@@ -39,6 +39,9 @@ sudo apt remove pihole-panel
 ```
 
 ## Changelog
+PiHole-Panel 2.5
+- Settings window is now centered.
+
 PiHole-Panel 2.3
 - Settings window is now a fixed size.
 - Code and performance improvements.
