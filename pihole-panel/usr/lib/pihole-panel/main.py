@@ -1,12 +1,6 @@
 # Application: PiHole-Panel
 # Author: Dale Osm (https://github.com/daleosm/)
 # GNU GENERAL PUBLIC LICENSE
-# PIPELINE TEST
-from pathlib import Path
-from urllib.request import urlopen
-from gi.repository import Gtk, Gio
-from gi.repository import GLib as glib
-from gtk_assistant import AssistantApp
 
 import urllib.request
 import urllib.error
@@ -16,6 +10,14 @@ import gi
 import sys
 import os
 import hashlib
+from pathlib import Path
+from urllib.request import urlopen
+
+from gi.repository import Gtk, Gio
+from gi.repository import GLib as glib
+
+from gtk_assistant import AssistantApp
+
 
 
 gi.require_version("Gtk", "3.0")

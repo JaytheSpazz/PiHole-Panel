@@ -1,9 +1,6 @@
 # Application: PiHole-Panel
 # Author: Dale Osm (https://github.com/daleosm/)
 # GNU GENERAL PUBLIC LICENSE
-##
-from pathlib import Path
-from gi.repository import Gtk
 
 import xml.etree.ElementTree as ET
 import urllib.request
@@ -12,6 +9,10 @@ import os
 import gi
 import json
 import hashlib
+from pathlib import Path
+
+from gi.repository import Gtk
+
 
 gi.require_version("Gtk", "3.0")
 
