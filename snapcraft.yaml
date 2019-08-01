@@ -12,7 +12,7 @@ parts:
   pihole-panel:
     plugin: python
     python-version: python3
-    source: pihole-panel/
+    source: .
     stage-packages:
       - python-gi
 
