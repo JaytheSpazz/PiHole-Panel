@@ -1,0 +1,21 @@
+name: pihole-panel
+version: 2.5
+summary: Python/GTK3 based Pi-hole Dashboard for stats and more
+description: |
+  Connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows 
+  you to use it as a control panel to control your Pi-hole hosts independently.
+base: core18
+confinement: devmode
+
+
+parts:
+  pihole-panel:
+    plugin: python
+    python-version: python3
+    source: pihole-panel/
+    stage-packages:
+      - python-gi
+
+apps:
+  pihole-panel:
+    command: bin/pihole-panel
