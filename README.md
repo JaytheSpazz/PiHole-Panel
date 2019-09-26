@@ -24,7 +24,7 @@ sudo dpkg -i pihole-panel-latest.deb
 **Alternatively,** Ubuntu and more [experimental](https://raspberrypi.stackexchange.com/questions/44622/how-to-add-ppa-entries-manually-on-raspberry-pi) Raspbian users can use the Ubuntu PPA:
 ```
 sudo add-apt-repository ppa:daleosm/pihole-panel
-sudo apt-get update
+sudo apt update
 sudo apt install pihole-panel
 ```
 
