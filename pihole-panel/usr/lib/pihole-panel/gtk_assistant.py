@@ -45,7 +45,7 @@ class AssistantApp:
 
         self.assistant.set_current_page(page_num)
 
-        if self.is_config_file_exist(config_directory, config_filename) == False:
+        if self.is_config_file_exist(config_directory, config_filename) is False:
             self.assistant.show()
 
     def create_config_dir(self, config_directory):
@@ -87,7 +87,7 @@ class AssistantApp:
         # Multiple hosts entrys
         configs["two_ip_address"] = ""
         configs["two_key_code"] = ""
-        
+
         result = self.validate_configs(configs)
 
         if result:
@@ -130,7 +130,7 @@ class AssistantApp:
 
         if "top_queries" not in json_obj:
             dialog = Gtk.MessageDialog(self.assistant, 0, Gtk.MessageType.ERROR,
-                Gtk.ButtonsType.CANCEL, "Invalid combination of Pi Address and Password")
+                                       Gtk.ButtonsType.CANCEL, "Invalid combination of Pi Address and Password")
 
             dialog.connect("response", lambda *a: dialog.destroy())
             dialog.set_position(Gtk.WindowPosition.CENTER)
