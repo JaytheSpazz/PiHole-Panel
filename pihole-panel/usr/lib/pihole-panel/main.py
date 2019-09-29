@@ -161,36 +161,36 @@ class GridWindow(Gtk.Window):
         # Create IP Address box
         ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
-        ip_address_label = Gtk.Label(label="Pi Address:                ")
-        ip_address_box.pack_start(ip_address_label, False, False, 6)
+        ip_address_label = Gtk.Label(label="Pi1 Address:")
+        ip_address_box.pack_start(ip_address_label, True, False, 6)
 
         ip_address_entry = Gtk.Entry()
         ip_address_entry.set_text(configs["ip_address"])
-        ip_address_box.pack_start(ip_address_entry, False, False, 6)
+        ip_address_box.pack_start(ip_address_entry, True, False, 6)
 
         # Pack IP Address box
-        page_box.pack_start(ip_address_box, False, False, 6)
+        page_box.pack_start(ip_address_box, True, False, 6)
 
         # Create key code box
         key_code_box = Gtk.HBox(homogeneous=False, spacing=12)
 
-        key_code_label = Gtk.Label(label="Pi Password:             ")
-        key_code_box.pack_start(key_code_label, False, False, 6)
+        key_code_label = Gtk.Label(label="Pi1 Password:")
+        key_code_box.pack_start(key_code_label, True, False, 6)
 
         key_code_entry = Gtk.Entry()
         key_code_entry.set_visibility(False)
 
         key_code_entry.set_text(configs["key_code"])
-        key_code_box.pack_start(key_code_entry, False, False, 6)
+        key_code_box.pack_start(key_code_entry, True, False, 6)
 
         # Pack key code box
-        page_box.pack_start(key_code_box, False, False, 6)
+        page_box.pack_start(key_code_box, True, False, 6)
 
         # Create 2IP Address box
         two_ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
-        ip_address_label = Gtk.Label(label="Pi Two Address:      ")
-        two_ip_address_box.pack_start(ip_address_label, False, False, 6)
+        ip_address_label = Gtk.Label(label="Pi2 Address:")
+        two_ip_address_box.pack_start(ip_address_label, True, False, 6)
 
         two_ip_address_entry = Gtk.Entry()
 
@@ -201,14 +201,14 @@ class GridWindow(Gtk.Window):
         two_ip_address_box.pack_start(two_ip_address_entry, False, False, 6)
 
         # Pack 2IP Address box
-        page_box.pack_start(two_ip_address_box, False, False, 6)
+        page_box.pack_start(two_ip_address_box, True, False, 6)
 
         # Create key code box
 
         two_key_code_box = Gtk.HBox(homogeneous=False, spacing=6)
 
-        two_key_code_label = Gtk.Label(label="Pi Two Password:     ")
-        two_key_code_box.pack_start(two_key_code_label, False, False, 6)
+        two_key_code_label = Gtk.Label(label="Pi2 Password:")
+        two_key_code_box.pack_start(two_key_code_label, True, False, 6)
 
         two_key_code_entry = Gtk.Entry()
         two_key_code_entry.set_visibility(False)
@@ -220,7 +220,7 @@ class GridWindow(Gtk.Window):
         two_key_code_box.pack_start(two_key_code_entry, False, False, 6)
 
         # Pack key code box
-        page_box.pack_start(two_key_code_box, False, False, 6)
+        page_box.pack_start(two_key_code_box, True, False, 6)
 
         # Create save button box
         button_box = Gtk.HBox(homogeneous=False, spacing=12)
@@ -231,7 +231,7 @@ class GridWindow(Gtk.Window):
         button_box.pack_end(button, False, False, 4)
 
         # Pack save button box
-        page_box.pack_start(button_box, False, False, 12)
+        page_box.pack_start(button_box, True, False, 12)
 
         self.popup.show_all()
 
