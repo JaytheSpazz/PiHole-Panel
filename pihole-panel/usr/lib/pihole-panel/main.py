@@ -158,6 +158,7 @@ class GridWindow(Gtk.Window):
         ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
         ip_address_label = Gtk.Label(label="Pi1 Address:")
+        ip_address_label.set_justify(Gtk.Justification.LEFT)
         ip_address_box.pack_start(ip_address_label, True, False, 6)
 
         ip_address_entry = Gtk.Entry()
@@ -171,6 +172,7 @@ class GridWindow(Gtk.Window):
         key_code_box = Gtk.HBox(homogeneous=False, spacing=12)
 
         key_code_label = Gtk.Label(label="Pi1 Password:")
+        key_code_label.set_justify(Gtk.Justification.LEFT)
         key_code_box.pack_start(key_code_label, True, False, 6)
 
         key_code_entry = Gtk.Entry()
@@ -186,6 +188,7 @@ class GridWindow(Gtk.Window):
         two_ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
         ip_address_label = Gtk.Label(label="Pi2 Address:")
+        two_ip_address_label.set_justify(Gtk.Justification.LEFT)
         two_ip_address_box.pack_start(ip_address_label, True, False, 6)
 
         two_ip_address_entry = Gtk.Entry()
@@ -204,6 +207,7 @@ class GridWindow(Gtk.Window):
         two_key_code_box = Gtk.HBox(homogeneous=False, spacing=6)
 
         two_key_code_label = Gtk.Label(label="Pi2 Password:")
+        two_key_code_label.set_justify(Gtk.Justification.LEFT)
         two_key_code_box.pack_start(two_key_code_label, True, False, 6)
 
         two_key_code_entry = Gtk.Entry()
