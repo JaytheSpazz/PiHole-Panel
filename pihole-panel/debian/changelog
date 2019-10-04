@@ -1,16 +1,23 @@
+pihole-panel (2.6) disco; urgency=low
+
+  * Fixed alignment for settings items with some themes.
+  
+-- Dale Osm <contact@daleosmond.com>  Fri, 4 Oct 2019 11:02:01 +0500
+  
 pihole-panel (2.5) disco; urgency=low
 
   * Settings window is now centered.
 
- -- Dale Osm <dale.osmond@gmx.com>  Fri, 26 Jul 2019 22:28:03 +0500
-pihole-panel (2.4) disco; urgency=low
+-- Dale Osm <contact@daleosmond.com>  Mon, 2 Sep 2019 09:13:26 +0500
 
-  * Changes to debian build folder.
-
- -- Dale Osm <dale.osmond@gmx.com>  Thu, 4 Jul 2019 17:44:56 +0500
-pihole-panel (2.3) cosmic; urgency=low
+pihole-panel (2.3) disco; urgency=low
 
   * Settings window is now a fixed size.
   * Code and performance improvements.
 
- -- Dale Osm <dale.osmond@gmx.com>  Wed, 12 Jun 2019 13:51:21 +0500
+-- Dale Osm <contact@daleosmond.com>  Mon, 2 Sep 2019 09:13:26 +0500
+
+pihole-panel (2.2) disco; urgency=low
+
+  * Fix for default Pi-hole host that is not using standard url.
+  * Cosmetic fixes to GUI elements.
