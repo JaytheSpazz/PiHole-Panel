@@ -187,7 +187,7 @@ class GridWindow(Gtk.Window):
         # Create 2IP Address box
         two_ip_address_box = Gtk.HBox(homogeneous=False, spacing=12)
 
-        two_ip_address_label = Gtk.Label(label="Pi2 Address: ")
+        two_ip_address_label = Gtk.Label(label="Pi2 Address:  ")
         two_ip_address_label.set_justify(Gtk.Justification.LEFT)
         two_ip_address_box.pack_start(two_ip_address_label, True, False, 6)
 
