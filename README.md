@@ -6,9 +6,7 @@ This program will run on your Pi or desktop computer that is running Raspian, Ub
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
-![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/main_window.png)
-![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup.png)
-![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/setup_done.png)
+![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/pihole-panel.gif)
 
 ## Install/Update
 ```
@@ -39,6 +37,9 @@ sudo apt remove pihole-panel
 ```
 
 ## Changelog
+PiHole-Panel 2.6
+-  Fixed alignment for settings items with some themes.
+
 PiHole-Panel 2.5
 - Settings window is now centered.
 
