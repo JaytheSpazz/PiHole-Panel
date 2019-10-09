@@ -6,7 +6,7 @@ This program will run on your Pi or desktop computer that is running Raspian, Po
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
-![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/pihole-panel.gif)
+![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/pihole-panel.png)
 
 ## Install/Update
 ```
