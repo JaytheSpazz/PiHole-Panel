@@ -4,8 +4,6 @@ it as a control panel to control your Pi-hole hosts independently.
 
 This program will run on your Pi or desktop computer that is running Raspian, Ubuntu, Pop_OS!, Debian etc...
 
-Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
-
 ![](https://raw.githubusercontent.com/daleosm/PiHole-Panel/master/pihole-panel.png)
 
 ## Install/Update
