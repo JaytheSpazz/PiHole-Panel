@@ -2,7 +2,7 @@
 Connects to one or multiple Pi-hole hosts and reports statistics in real-time and also allows you to use  
 it as a control panel to control your Pi-hole hosts independently. 
 
-This program will run on your Pi or desktop computer that is running Raspian, Pop_OS!, Ubuntu, Debian etc...
+This program will run on your Pi or desktop computer that is running Raspian, Ubuntu, Pop_OS!, Debian etc...
 
 Includes compliant desktop entry. (Icon belongs to https://github.com/pi-hole)
 
@@ -19,7 +19,7 @@ cd ~/Downloads
 sudo dpkg -i pihole-panel-latest.deb
 ```
 
-**Alternatively,** Pop_OS!, Ubuntu and more [experimental](https://raspberrypi.stackexchange.com/questions/44622/how-to-add-ppa-entries-manually-on-raspberry-pi) Raspbian users can use the Ubuntu PPA:
+**Alternatively,** Ubuntu, Pop_OS!, and more [experimental](https://raspberrypi.stackexchange.com/questions/44622/how-to-add-ppa-entries-manually-on-raspberry-pi) Raspbian users can use the Ubuntu PPA:
 ```
 sudo add-apt-repository ppa:daleosm/pihole-panel
 sudo apt update
