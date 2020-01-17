@@ -9,6 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 dir("pihole-panel") {
+                    sh "apt update"
+                    sh "apt install devscripts"
                     sh "debuild -us -uc"
                     /*
                         Sign and upload from workstation since instance is not online 24/7
