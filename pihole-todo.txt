@@ -1,1 +1,0 @@
-* Allow for no password (App won't function because the API becomes read-only) 
