@@ -39,26 +39,3 @@ PiHole-Panel 2.6
 
 PiHole-Panel 2.5
 - Settings window is now centered.
-
-PiHole-Panel 2.3
-- Settings window is now a fixed size.
-- Code and performance improvements.
-
-PiHole-Panel 2.2
-- Fix for default Pi-hole host that is not using standard url.
-- Cosmetic fixes to GUI elements.
-
-PiHole-Panel 2.1
-- Complete and stable multi-host support.
-
-PiHole-Panel 2.0
-- Changes to API now require 3 second update interval.
-
-PiHole-Panel 1.9
-- Now compatible with latest API.
-- Temporary fix for Gravity Last Updated.
-
-PiHole-Panel 1.8
-- Now works with package manager.
-- Fix for handling of when Pi-hole host is down.
-- Fix for update notification.
